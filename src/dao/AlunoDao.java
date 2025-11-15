@@ -27,10 +27,6 @@ public class AlunoDao {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        finally{
-            DB.closeConnection();
-        }
-
     }
 
     public void atualizarAluno(Aluno aluno) {
@@ -49,10 +45,7 @@ public class AlunoDao {
 
         } catch(SQLException e){
             throw new RuntimeException(e);
-        } finally{
-            DB.closeConnection();
         }
-
     }
 
     public void deletarAluno(Aluno aluno){
@@ -67,10 +60,7 @@ public class AlunoDao {
 
         } catch(SQLException e){
             throw new RuntimeException(e);
-        } finally{
-            DB.closeConnection();
         }
-
     }
 
     public Aluno buscaAlunoPorMatricula(int matricula){
@@ -88,12 +78,12 @@ public class AlunoDao {
             if (rs.next()){
                 //cria turma;
                 Turma turma = new Turma();
-                turma.setCodigo_turma(rs.getInt("turma.codigo_turma"));
+                turma.setCodigo_turma(rs.getInt("codigo_turma"));
                 turma.setName(rs.getString("nome_turma"));
 
                 //cria aluno;
                 Aluno aluno = new Aluno();
-                aluno.setMatricula(rs.getInt("aluno.matricula"));
+                aluno.setMatricula(rs.getInt("matricula"));
                 aluno.setName(rs.getString("aluno_nome"));
                 aluno.setTurma(turma);
 
@@ -102,8 +92,6 @@ public class AlunoDao {
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        } finally{
-            DB.closeConnection();
         }
         return null;
     }
@@ -137,10 +125,7 @@ public class AlunoDao {
             return alunos;
 
         } catch(SQLException e){
-            throw new DBException("Erro ao listar alunos: " + e.getMessage());
-        } finally{
-            DB.closeConnection();
+            throw new RuntimeException(e.getMessage());
         }
-
     }
 }

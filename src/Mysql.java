@@ -14,16 +14,18 @@ public class Mysql {
     public static void main(String[] args) throws SQLException {
 
         AlunoDao alunoDao = new AlunoDao();
-//        Aluno aluno = alunoDao.buscaAlunoPorMatricula(103);
-//        System.out.println("===========================");
+
+//        Aluno aluno = new Aluno(105, "Ayanokoji Kiyotaka", new Turma(30, "1C"));
+//        alunoDao.inserirAluno(aluno);
+
+//        Aluno aluno = alunoDao.buscaAlunoPorMatricula(105);
 //        System.out.println(aluno);
 
         List<Aluno> alunos;
         alunos = alunoDao.listarAlunos();
 
-        for(Aluno aluno : alunos){
-            System.out.println("========================");
-            System.out.println(aluno);
+        for (Aluno aluno1 : alunos) {
+            System.out.println(aluno1);
         }
 
     }
