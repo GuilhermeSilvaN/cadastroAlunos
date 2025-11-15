@@ -34,9 +34,7 @@ select aluno.matricula AS matricula_aluno, aluno.nome AS nome_aluno, aluno.fk_tu
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="a2b6e831-87d8-49ca-8d67-9b83657c6c22" object-ref="consoles/Connection" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="a2b6e831-87d8-49ca-8d67-9b83657c6c22" />

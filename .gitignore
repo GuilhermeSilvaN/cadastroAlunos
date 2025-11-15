@@ -1,0 +1,7 @@
+#unnecessary files
+bin/
+out/
+
+#ignore IDEs
+.vscode/
+.idea/
