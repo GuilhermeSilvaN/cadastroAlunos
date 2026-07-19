@@ -206,27 +206,5 @@ Este projeto foi desenvolvido com o objetivo de consolidar conhecimentos relacio
 * Conexão entre aplicações e bancos de dados;
 * Organização de projetos Java.
 
-## Possíveis melhorias
-
-Algumas melhorias que podem ser implementadas futuramente:
-
-* Separação mais detalhada das responsabilidades utilizando o padrão DAO;
-* Implementação de tratamento de exceções personalizado;
-* Criação de uma interface gráfica;
-* Migração para uma API REST utilizando Spring Boot;
-* Utilização do Spring Data JPA;
-* Implementação de validações dos dados;
-* Adição de testes automatizados;
-* Implementação de autenticação e autorização;
-* Criação de documentação da API.
-
-## Autor
-
-Desenvolvido por **Guilherme Silva**.
-
-GitHub: `GuilhermeSilvaN`
-
-## Licença
-
 Este projeto foi desenvolvido para fins de estudo e prática de desenvolvimento de software.
 
